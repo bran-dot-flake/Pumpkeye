@@ -16,3 +16,4 @@ if palette_fade_end()
 	if page > array_length(text) - 1 or page > sprite_get_number(global.sprites.intro_scene) - 1
 		instance_destroy();	
 }
+

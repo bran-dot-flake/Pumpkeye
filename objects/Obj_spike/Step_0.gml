@@ -1,6 +1,10 @@
 if (place_meeting(x, y,obj_player))
 {
-	game_restart();
+	room_goto(target_rm)
+	obj_player.x = target_x;
+	obj_player.y = target_y;
+	
+	//game_restart();
 }
 
 
