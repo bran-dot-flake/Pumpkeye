@@ -3,6 +3,10 @@ grv = 0.3;
 walkspd = 1;
 xspd = walkspd;
 
+target_x = 0;
+target_y = 0;
+target_rm = 0;
+
 
 
 
