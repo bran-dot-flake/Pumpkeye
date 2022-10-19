@@ -17,7 +17,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 4,
   "height": 4,
   "textureGroupId": {
@@ -68,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Title",
-    "path": "folders/Title.yy",
+    "name": "Assets",
+    "path": "folders/Title/Assets.yy",
   },
 }

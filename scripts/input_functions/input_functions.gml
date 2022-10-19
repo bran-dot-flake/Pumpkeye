@@ -18,6 +18,23 @@ function input_released(_button) {
 }
 
 
+
+function input_pressed_any()
+{
+	// Loop through each button (same array length)
+	for (var i = 0; i < input.Height - 2; i++)
+	{
+		// Button pressed
+		if input_held(i) return true;
+	}
+	
+	// None pressed
+	return false;
+}
+
+
+
 #macro ih input_held
 #macro ip input_pressed
 #macro ir input_released
+#macro ipa input_pressed_any

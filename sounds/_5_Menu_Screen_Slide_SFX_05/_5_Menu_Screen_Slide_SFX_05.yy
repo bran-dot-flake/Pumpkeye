@@ -17,7 +17,7 @@
   "soundFile": "_5_Menu_Screen_Slide_SFX_05.wav",
   "duration": 0.272313,
   "parent": {
-    "name": "Title",
-    "path": "folders/Title.yy",
+    "name": "Assets",
+    "path": "folders/Title/Assets.yy",
   },
 }

@@ -39,7 +39,7 @@ function palette_fade(_type)
 {
 	with obj_application_surface {
 		target_palette_index = _type == transition_type.outro ? sprite_get_width(global.sprites.palette) - 1 : 1;	
-		_speed = _type == transition_type.outro ? 1 / 7 : 1 / 40	
+		_speed = _type == transition_type.outro ? global.defaults.intro_palette_speed[1] : 	global.defaults.intro_palette_speed[0];
 	}
 }
 

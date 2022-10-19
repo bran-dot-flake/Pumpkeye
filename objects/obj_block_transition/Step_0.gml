@@ -1,6 +1,57 @@
 
+#region Initialize
+
+
 if frames == 0 initialize();
 
-if animation_end() instance_destroy();
 
+#endregion
+
+
+#region Timers
+
+
+timer = approach(timer, 0, 1)
 frames++;
+
+
+#endregion
+
+
+#region Transition End
+
+
+// Animation over
+if animation_end() 
+{
+	// Wait
+	if type == transition_type.intro
+	{
+		// Stop animation
+		image_speed = 0;
+		
+		
+		// Timer / Start outro
+		if timer == 0 timer = time + 1;
+		if timer == 1 
+		{
+			// Destroy intro
+			instance_destroy();
+			
+			
+			// Next room
+			if target_room == "next" room_goto_next()
+			else if target_room != noone room_goto(target_room)
+			
+			
+			// Start outro
+			var inst = instance_create_depth(0, 0, depths.gui, obj_block_transition);
+			inst.type = transition_type.outro;
+		}
+	}
+	else instance_destroy();
+
+}
+
+
+#endregion

@@ -17,7 +17,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 48,
   "height": 37,
   "textureGroupId": {
@@ -72,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Parallax",
-    "path": "folders/Parallax.yy",
+    "path": "folders/Title/Parallax.yy",
   },
 }
