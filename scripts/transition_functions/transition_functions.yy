@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Transition",
-    "path": "folders/Transition.yy",
+    "path": "folders/Good For Now/Transition.yy",
   },
 }

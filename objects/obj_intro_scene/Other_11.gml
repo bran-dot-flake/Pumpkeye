@@ -8,7 +8,8 @@
 var pcount = count;
 if palette_fade_end() count += text_speed;
 count = clamp(count, 0, string_length(text[page]));
-	
+
+
 // New character
 if floor(pcount) != floor(count) 
 {
@@ -20,7 +21,7 @@ if floor(pcount) != floor(count)
 	{
 		case ",":
 		case ".":
-		case "!": timer[0] = time[0]; break;
+		case "!": timer[0] = time[0];	  break;
 		case "?": timer[0] = time[0] * 2; break;
 	}
 }

@@ -17,7 +17,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 16,
   "height": 16,
   "textureGroupId": {
@@ -77,6 +76,6 @@
   "nineSlice": null,
   "parent": {
     "name": "player sprites",
-    "path": "folders/Nate/Sprites/player sprites.yy",
+    "path": "folders/Needs Work/Nate/Sprites/player sprites.yy",
   },
 }

@@ -1,15 +1,12 @@
 
 #region Positioning Temps
 
-
-var font_sprite		= global.sprites.title;
-var title_y			= 50;
-var ps				= new vec2(56, title_y);
+var ps				= new vec2(56, 150 + y_offset);
 
 var label_sep		= 10;
 var label_main_x	= [76, 131];
 var label_x			= [60, 130];
-var label_y			= ps.y + sprite_get_height(font_sprite) + label_sep;
+var label_y			= ps.y// + sprite_get_height(font_sprite) + label_sep;
 
 var line_sep		= 4;
 var str_h			= string_height("A");
@@ -57,7 +54,7 @@ if !initialized {
 #region Name Sprite
 
 // Draw the name sprite
-draw_sprite(sprite_index, image_index, ps.x, ps.y);
+//draw_sprite(sprite_index, image_index, ps.x, ps.y);
 
 #endregion
 

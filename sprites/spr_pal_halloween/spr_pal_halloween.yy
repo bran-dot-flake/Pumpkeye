@@ -11,15 +11,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 6,
+  "bbox_right": 7,
   "bbox_top": 0,
-  "bbox_bottom": 5,
+  "bbox_bottom": 6,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
-  "width": 7,
-  "height": 6,
+  "width": 8,
+  "height": 7,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -69,6 +68,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Palette Swapping",
-    "path": "folders/Palette Swapping.yy",
+    "path": "folders/Good For Now/Transition/Palette Swapping.yy",
   },
 }

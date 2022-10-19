@@ -5,8 +5,18 @@ state		= transition_states.off;
 timer		= 0;
 time		= 60;
 depth		= depths.gui;
+
+
+trans_complete = false;
+
+
+
+
+
 frames		= 0;
 draw		= false;
+
+
 
 
 function initialize()
@@ -14,6 +24,9 @@ function initialize()
 	instance	= noone;
 	target_room	= noone;
 }
+
+
+
 
 function change_state(_state)
 {

@@ -1,0 +1,2 @@
+
+enum tile {none, solid}

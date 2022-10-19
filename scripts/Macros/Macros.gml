@@ -11,3 +11,7 @@
 #macro gc	gamepad_button_check
 #macro gcp	gamepad_button_check_pressed
 #macro gcr	gamepad_button_check_released
+
+
+// Layers
+#macro LAY_FX "inst_fx"

@@ -3,10 +3,10 @@
 
 
 function default_save_file() constructor {
-	scale				= floor(display_get_height() / gh) - 2;
+	scale				= floor(display_get_height() / gh) - 1;
 	mus_volume			= 1;
-	sfx_volume			= 1;
-	master_volume		= .6;
+	sfx_volume			= .4;
+	master_volume		= 0;
 	fullscreen			= false;
 }
 

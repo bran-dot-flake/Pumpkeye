@@ -1,6 +1,6 @@
 
 
-var c = global.defaults.pal[1]
+var c = global.defaults.pal[2]
 draw_rectangle_color(0, y + sprite_height, gw, gh, c, c, c, c, 0)
 
 // Draw the layer
