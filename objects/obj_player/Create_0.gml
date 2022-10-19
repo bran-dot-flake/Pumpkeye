@@ -1,5 +1,7 @@
 
 play_song(mus_150, 1)
+camera_set_target(id);
+
 
 #macro cs 8
 global.gravity = .2
@@ -54,7 +56,7 @@ frames			= 0;
 sprite[player_states.born]	= spr_pumpkin_rise;
 sprite[player_states.move]	= spr_pumpkin_walk;
 sprite[player_states.jump]	= spr_pumpkin_walk;
-sprite[player_states.idle]	= spr_pumpkin_idle;
+sprite[player_states.idle]	= spr_pumpkin_walk;
 sprite[player_states.pause] = spr_pumpkin_walk;
 
 

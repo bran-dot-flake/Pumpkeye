@@ -21,7 +21,7 @@ if floor(pcount) != floor(count)
 	{
 		case ",":
 		case ".":
-		case "!": timer[0] = time[0]; break;
+		case "!": timer[0] = time[0];	  break;
 		case "?": timer[0] = time[0] * 2; break;
 	}
 }

@@ -31,6 +31,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Particles",
-    "path": "folders/Particles.yy",
+    "path": "folders/Needs Work/Particles.yy",
   },
 }

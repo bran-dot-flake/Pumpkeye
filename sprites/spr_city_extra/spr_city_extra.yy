@@ -72,6 +72,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Parallax",
-    "path": "folders/Title/Parallax.yy",
+    "path": "folders/Needs Work/Title/Parallax.yy",
   },
 }

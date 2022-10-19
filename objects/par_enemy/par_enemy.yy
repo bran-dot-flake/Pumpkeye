@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/bin/Zen/enemies.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
 }

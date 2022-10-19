@@ -1,6 +1,6 @@
 ///@desc Idle
-
-
+	
+	
 if instance_exists(obj_player) {
 	// Get distance
 	var dist = distance_to_object(obj_player);

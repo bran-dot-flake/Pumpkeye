@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "ts_autumn",
   "spriteId": {
-    "name": "pumpka_tiles",
-    "path": "sprites/pumpka_tiles/pumpka_tiles.yy",
+    "name": "spr_pumpkey_tiles",
+    "path": "sprites/spr_pumpkey_tiles/spr_pumpkey_tiles.yy",
   },
   "tileWidth": 8,
   "tileHeight": 8,

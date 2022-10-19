@@ -72,6 +72,6 @@
   "nineSlice": null,
   "parent": {
     "name": "player sprites",
-    "path": "folders/Nate/Sprites/player sprites.yy",
+    "path": "folders/Needs Work/Nate/Sprites/player sprites.yy",
   },
 }

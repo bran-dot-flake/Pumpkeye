@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Managers",
-    "path": "folders/Managers.yy",
+    "path": "folders/Objects/Managers.yy",
   },
 }

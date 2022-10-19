@@ -65,8 +65,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 23,
-    "yorigin": 18,
+    "xorigin": 24,
+    "yorigin": 17,
     "eventToFunction": {},
     "eventStubScript": null,
   },
@@ -76,6 +76,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Player",
-    "path": "folders/Player.yy",
+    "path": "folders/Objects/Player.yy",
   },
 }

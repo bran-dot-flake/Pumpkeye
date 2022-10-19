@@ -92,6 +92,6 @@
   },
   "parent": {
     "name": "Sprites",
-    "path": "folders/Nate/Sprites.yy",
+    "path": "folders/Needs Work/Nate/Sprites.yy",
   },
 }

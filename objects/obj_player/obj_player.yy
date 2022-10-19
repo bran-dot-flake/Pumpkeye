@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_player",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_pumpkin_idle",
+    "path": "sprites/spr_pumpkin_idle/spr_pumpkin_idle.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -34,6 +37,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Player",
-    "path": "folders/Player.yy",
+    "path": "folders/Objects/Player.yy",
   },
 }

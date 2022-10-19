@@ -7,8 +7,8 @@ move_with_tile_collisions();
 
 
 // Animation
-if animation_end() image_speed = 0;
-
+//if animation_end() image_speed = 0;
+image_speed = 0;
 
 // Input
 get_input();

@@ -17,3 +17,4 @@ function change_state(_state) {
 }
 
 change_state(state);
+image_index = random(image_number - 1)

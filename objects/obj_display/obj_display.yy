@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_display",
-  "spriteId": {
-    "name": "spr_icon_camera",
-    "path": "sprites/spr_icon_camera/spr_icon_camera.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "managed": true,
@@ -39,6 +36,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Managers",
-    "path": "folders/Managers.yy",
+    "path": "folders/Objects/Managers.yy",
   },
 }

@@ -1,5 +1,5 @@
-/// @desc
-camera_set_view_size(c0, view_width, view_height);
+///@desc Initialize view
+
+camera_set_view_size(camera, gw, gh);
 view_enabled	 = true;
 view_visible[0]  = true;
-sprite_index = (room == rm_init)?spr_icon_camera: spr_icon_camera_target;

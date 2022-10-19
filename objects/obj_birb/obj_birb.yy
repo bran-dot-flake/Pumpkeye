@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_birb",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_birb_idle",
+    "path": "sprites/spr_birb_idle/spr_birb_idle.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -31,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Enemies.yy",
+    "path": "folders/Objects/Enemies.yy",
   },
 }

@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "par_enemy",
-    "path": "objects/par_enemy/par_enemy.yy",
+    "name": "par_enemyq",
+    "path": "objects/par_enemyq/par_enemyq.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

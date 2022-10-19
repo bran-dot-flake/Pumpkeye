@@ -68,6 +68,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Object Icons",
-    "path": "folders/Object Icons.yy",
+    "path": "folders/Sprites/Object Icons.yy",
   },
 }

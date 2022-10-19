@@ -96,6 +96,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Player",
-    "path": "folders/Player.yy",
+    "path": "folders/Objects/Player.yy",
   },
 }

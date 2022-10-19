@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Title",
-    "path": "folders/Title.yy",
+    "path": "folders/Needs Work/Title.yy",
   },
 }

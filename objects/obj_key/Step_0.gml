@@ -8,4 +8,8 @@ if target != noone {
 	// Move
 	x = lerp(x, tpos.x, .2);
 	y = lerp(y, tpos.y, .2);
+	
+	if frames == 0 {x = tpos.x; y = tpos.y;}
 }
+
+frames++;

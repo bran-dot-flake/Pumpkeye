@@ -146,6 +146,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Assets",
-    "path": "folders/Title/Assets.yy",
+    "path": "folders/Needs Work/Title/Assets.yy",
   },
 }
