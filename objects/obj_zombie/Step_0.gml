@@ -1,7 +1,10 @@
-
 yspd = yspd + grv;
 
-
+//dont walk off edges
+if (grounded) && (afraid_of_heights) && (!place_meeting(x + xspd, y+1, obj_wall))
+{
+	xspd = -xspd;
+}
 
 
 //horizontal collision
@@ -31,7 +34,6 @@ y = y + yspd;
 
  if (place_meeting(x, y,obj_player))
 {
-	
 	room_goto(target_rm)
 	obj_player.x = target_x;
 	obj_player.y = target_y;
@@ -45,12 +47,14 @@ y = y + yspd;
 //Animations
 if(!place_meeting(x,y+1,obj_wall))
 {
+	grounded = false;
 	sprite_index = spr_zombie_fall;  //jumping/falling sprite
 	image_speed = 0;
 	if(sign(yspd) > 0) image_index = 1; else image_index = 0;
 }
 else
 {
+	grounded = true;
 	image_speed = 1;
 	if (xspd == 0)
 	{
