@@ -13,7 +13,8 @@ if palette_fade_end()
 			
 			
 	// Destroy if theres no more data
-	if page > array_length(text) - 1 or page > sprite_get_number(global.sprites.intro_scene) - 1
-		instance_destroy();	
+	if page > array_length(text) - 1 or page > sprite_get_number(global.sprites.intro_scene) - 1 {
+		transition("next");	
+		instance_destroy();
+	}
 }
-

@@ -17,7 +17,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 16,
   "height": 16,
   "textureGroupId": {
@@ -92,7 +91,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Title",
-    "path": "folders/Title.yy",
+    "name": "Assets",
+    "path": "folders/Needs Work/Title/Assets.yy",
   },
 }

@@ -128,7 +128,7 @@ if chck and selected_level == 1 for (var i = 0; i < array_length(options); i++) 
 		switch val {
 			
 			case "START":
-				if transition_end() transition("", "next")
+				if transition_end() transition("next")
 			break;
 			
 			case "QUIT":

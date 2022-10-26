@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Nate/Objects.yy",
+    "path": "folders/Needs Work/Nate/Objects.yy",
   },
 }

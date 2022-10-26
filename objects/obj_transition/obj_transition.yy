@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Transition",
-    "path": "folders/Transition.yy",
+    "name": "bin",
+    "path": "folders/bin.yy",
   },
 }

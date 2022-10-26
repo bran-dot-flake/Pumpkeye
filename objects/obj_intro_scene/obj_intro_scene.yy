@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Intro Scene",
-    "path": "folders/Intro Scene.yy",
+    "path": "folders/Good For Now/Intro Scene.yy",
   },
 }

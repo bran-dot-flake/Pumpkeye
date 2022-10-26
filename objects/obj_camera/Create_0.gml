@@ -1,23 +1,7 @@
 
+target = noone;
+camera = view_camera[0];
 
-// Variables
-function initialize() {
-	view_width		= gw;
-	view_height		= gh;
-	// Scale to max - 1 by default
-	var scle		= global.save_data.scale;
-	
-	surface_resize	(application_surface, view_width, view_height);
-	
-	view_width		*= scle;
-	view_height		*= scle;
+global.current_screen = new vec2(0, 0);
 
-	// Center Window
-	alarm[0]		= 1;
-
-	// Resize screen
-	window_set_size	(view_width, view_height);
-	
-}
-
-initialize();
+debug_add_global_entry("current_screen");

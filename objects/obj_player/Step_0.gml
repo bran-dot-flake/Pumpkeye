@@ -1,6 +1,9 @@
 
+#region Timers
 
 
+
+<<<<<<< HEAD
 // get input from player//
  var right_key = keyboard_check(ord("D"))
  
@@ -121,5 +124,9 @@ if(xspd != 0) image_xscale = sign(xspd); //this flips the sprite to face the lef
 
 
 
+=======
+#endregion
+>>>>>>> 61808e097d1da8319d62208e6b689a75267f65a4
 
 
+event_user(state);

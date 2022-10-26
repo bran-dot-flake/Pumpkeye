@@ -49,9 +49,3 @@ function vec2(_x, _y) constructor {
 	x = _x;
 	y = _y;
 }
-
-
-function play_sfx(_sfx) {
-	return audio_play_sound(_sfx, 2, 0, 
-			global.save_data.master_volume * global.save_data.sfx_volume);
-}

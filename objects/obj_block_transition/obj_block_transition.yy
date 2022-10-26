@@ -10,7 +10,7 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "par_transition",
     "path": "objects/par_transition/par_transition.yy",
@@ -36,6 +36,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Transition",
-    "path": "folders/Transition.yy",
+    "path": "folders/Good For Now/Transition.yy",
   },
 }

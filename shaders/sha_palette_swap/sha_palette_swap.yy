@@ -5,6 +5,6 @@
   "type": 1,
   "parent": {
     "name": "Palette Swapping",
-    "path": "folders/Palette Swapping.yy",
+    "path": "folders/Good For Now/Transition/Palette Swapping.yy",
   },
 }

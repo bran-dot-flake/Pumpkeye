@@ -11,5 +11,8 @@ create_save_file();
 global.save_data = load_game(global.defaults.save_file_name);
 
 
+// Set font
+draw_set_font(global.defaults.font);
+
 // Go to next; title
 room_goto_next();

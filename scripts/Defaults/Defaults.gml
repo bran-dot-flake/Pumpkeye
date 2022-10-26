@@ -1,10 +1,5 @@
 
 global.defaults = {
-	mus_overworld	: noone,
-	mus_title		: noone,
-	mus_gameover	: noone,
-	mus_gamewin		: noone,
-		
 	font			: undefined,
 	title			: "pumpkeye",
 		
@@ -12,8 +7,8 @@ global.defaults = {
 	
 	pal				: [make_color_rgb(247, 146, 30	), 
 						make_color_rgb(177, 70, 34	),
-						make_color_rgb(62, 28, 52	),
-						make_color_rgb(19, 9, 18	)],
+						make_color_rgb(97, 38,	73	),
+						make_color_rgb(19, 9,	18	)],
 	
 
 	intro_text1		: ["EYEBYIM AND PUMPKO ARE THE BESTEST OF FRIENDS.",
@@ -33,6 +28,9 @@ global.defaults = {
 						"HASTE MUST BE MADE, FOR THERE WAS NOT MUCH TIME."],
 						
 	parallax_y		: 180,
+	transition_time	: 40,	// time to wait
+	intro_palette_speed			: [1 / 40, 1 / 7], // intro, outro
+	transition_palette_speed	: [1 / 7 , 1 / 7],
 }
 
 
@@ -42,13 +40,18 @@ global.sounds = {
 	menu_move_x		: _5_Menu_Screen_Slide_SFX_03,
 	menu_move_y		: _5_Menu_Screen_Slide_SFX_01,
 	menu_slide		: _5_Menu_Screen_Slide_SFX_01,
+	
+	mus_overworld	: mus_150,
+	mus_title		: mus_before,
+	mus_gameover	: noone,
+	mus_gamewin		: noone,
 
 }
 
 
 global.sprites = {
 	// Title
-	parallax		: spr_city_parallax,
+	parallax		: spr_city_extra,
 	selector		: spr_selector_star,
 	title			: spr_title_new,
 	
@@ -65,6 +68,6 @@ global.save_data				= "";
 
 
 var fnt_spr						= spr_fnt_placeholder;
-var fnt_map						= " ABCDEFGHIJKLMNOPQRSTUVWXYZ!?."
+var fnt_map						= " ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.0123456789"
 global.defaults.font			= font_add_sprite_ext(fnt_spr, fnt_map, 1, 1);
 draw_set_font					(global.defaults.font);
