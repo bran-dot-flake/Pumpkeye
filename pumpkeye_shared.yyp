@@ -43,6 +43,7 @@
     {"id":{"name":"spr_platform_top","path":"sprites/spr_platform_top/spr_platform_top.yy",},"order":15,},
     {"id":{"name":"obj_block_transition","path":"objects/obj_block_transition/obj_block_transition.yy",},"order":4,},
     {"id":{"name":"spr_icon_settings_button","path":"sprites/spr_icon_settings_button/spr_icon_settings_button.yy",},"order":4,},
+    {"id":{"name":"nates_notes","path":"notes/nates_notes/nates_notes.yy",},"order":5,},
     {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":0,},
     {"id":{"name":"Obj_death_block","path":"objects/Obj_death_block/Obj_death_block.yy",},"order":0,},
     {"id":{"name":"Enums","path":"scripts/Enums/Enums.yy",},"order":1,},
