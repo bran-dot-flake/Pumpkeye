@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Intro Scene",
-    "path": "folders/Good For Now/Intro Scene.yy",
+    "path": "folders/a_Good For Now/Intro Scene.yy",
   },
 }

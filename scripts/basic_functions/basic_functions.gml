@@ -49,3 +49,8 @@ function vec2(_x, _y) constructor {
 	x = _x;
 	y = _y;
 }
+
+
+function facing_to_angle(_facing) {
+	return _facing ? 0 : 180;
+}

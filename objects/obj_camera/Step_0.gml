@@ -1,6 +1,6 @@
 
 // Follow target
-if target != noone {
+if target != noone and instance_exists(target) {
 	// Get the target's base position
 	var tgx = (target.x div gw) * gw;
 	var tgy = (target.y div gh) * gh;
@@ -12,8 +12,8 @@ if target != noone {
 
 	
 	// Change room shown
-	if target.bbox_left >= myx + gw || target.bbox_right <= myx ||
-	   target.bbox_top >= myy + gh || target.bbox_bottom <= myy {
+	if target.x > myx + gw || target.x < myx ||
+	   target.y > myy + gh || target.y < myy {
 		
 		// Get target room direction
 		var xoff = tgx - myx;
@@ -33,5 +33,12 @@ if target != noone {
 		// Set new room variable
 		global.current_screen.x = camera_get_view_x(camera);
 		global.current_screen.y = camera_get_view_y(camera);
+		
+		
+		// Set respawn point
+		if !(tpos.x == myx and tpos.y == myy) {
+			global.respawn_point.x = target.x;
+			global.respawn_point.y = target.y;
+		}
 	}
-}
+} else target = noone;

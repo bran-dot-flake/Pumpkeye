@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 156,
   "height": 52,
   "textureGroupId": {
@@ -80,6 +81,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Intro Scene",
-    "path": "folders/Good For Now/Intro Scene.yy",
+    "path": "folders/a_Good For Now/Intro Scene.yy",
   },
 }

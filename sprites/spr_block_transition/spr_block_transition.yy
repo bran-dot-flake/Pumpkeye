@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 16,
   "height": 16,
   "textureGroupId": {
@@ -84,6 +85,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Transition",
-    "path": "folders/Good For Now/Transition.yy",
+    "path": "folders/a_Good For Now/Transition.yy",
   },
 }

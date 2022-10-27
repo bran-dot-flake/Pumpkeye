@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bin",
-    "path": "folders/bin.yy",
+    "name": "Objects",
+    "path": "folders/Nate/Objects.yy",
   },
 }

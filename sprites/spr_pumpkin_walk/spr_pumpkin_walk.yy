@@ -10,13 +10,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 18,
-  "bbox_right": 29,
+  "bbox_left": 20,
+  "bbox_right": 27,
   "bbox_top": 13,
   "bbox_bottom": 16,
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 48,
   "height": 18,
   "textureGroupId": {
@@ -71,7 +72,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "bin",
+    "path": "folders/bin.yy",
   },
 }

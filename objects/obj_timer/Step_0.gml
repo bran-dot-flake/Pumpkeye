@@ -3,5 +3,5 @@
 global.time = approach(global.time, 0, 1/60);
 
 
-width = approach(width, target_width, 2)
+//width = target_width;
 frames++;

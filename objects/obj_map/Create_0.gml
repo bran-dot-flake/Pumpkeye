@@ -1,2 +1,2 @@
 
-enum tile {none, solid}
+enum tile {none, solid, platform, ladder}

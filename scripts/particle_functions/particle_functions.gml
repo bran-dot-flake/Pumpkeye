@@ -6,7 +6,7 @@ function foot_dust(_x, _y, _dir)
 	for (var i = 0; i < 3; i ++)
 	{
 		// Create the Instance
-		var part = instance_create_layer(_x + _dir, _y, LAY_FX, obj_foot_dust);
+		var part = instance_create_depth(_x + _dir, _y, depths.fx_top, obj_foot_dust);
 	
 		// Give Particle Attributes
 		with part

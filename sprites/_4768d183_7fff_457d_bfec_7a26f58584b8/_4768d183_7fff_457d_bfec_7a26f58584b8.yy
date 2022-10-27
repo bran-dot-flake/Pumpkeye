@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 288,
   "height": 216,
   "textureGroupId": {
@@ -68,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Needs Work/Nate/Sprites.yy",
+    "path": "folders/Nate/Sprites.yy",
   },
 }

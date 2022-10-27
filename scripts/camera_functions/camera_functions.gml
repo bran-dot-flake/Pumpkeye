@@ -12,4 +12,10 @@ function in_screen() {
 }
 
 
+
+function camera_jolt() {
+	//obj_camera.	
+}
+
+
 #macro screen global.current_screen

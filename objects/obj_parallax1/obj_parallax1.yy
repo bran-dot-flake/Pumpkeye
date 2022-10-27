@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parallax",
-    "path": "folders/Needs Work/Title/Parallax.yy",
+    "path": "folders/a_Needs Work/Title/Parallax.yy",
   },
 }

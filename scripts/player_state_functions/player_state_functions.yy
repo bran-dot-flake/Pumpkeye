@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "path": "folders/z__Now/Player.yy",
   },
 }

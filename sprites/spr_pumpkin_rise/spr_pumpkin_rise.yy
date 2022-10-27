@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 48,
   "height": 18,
   "textureGroupId": {
@@ -76,6 +77,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "path": "folders/Sprites/Player.yy",
   },
 }

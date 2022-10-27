@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 7,
   "height": 6,
   "textureGroupId": {
@@ -73,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Assets",
-    "path": "folders/Needs Work/Title/Assets.yy",
+    "name": "UI",
+    "path": "folders/Sprites/UI.yy",
   },
 }

@@ -25,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "m",
-    "path": "folders/Objects/Player/m.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

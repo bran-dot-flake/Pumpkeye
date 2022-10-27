@@ -39,7 +39,7 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "m",
-    "path": "folders/Objects/Player/m.yy",
+    "name": "Metadata",
+    "path": "folders/Sprites/Metadata.yy",
   },
 }

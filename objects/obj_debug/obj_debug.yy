@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Debug",
-    "path": "folders/Good For Now/Debug.yy",
+    "path": "folders/a_Good For Now/Debug.yy",
   },
 }

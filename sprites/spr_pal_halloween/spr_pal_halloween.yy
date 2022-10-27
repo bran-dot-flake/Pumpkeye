@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 8,
   "height": 7,
   "textureGroupId": {
@@ -68,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Palette Swapping",
-    "path": "folders/Good For Now/Transition/Palette Swapping.yy",
+    "path": "folders/a_Good For Now/Transition/Palette Swapping.yy",
   },
 }

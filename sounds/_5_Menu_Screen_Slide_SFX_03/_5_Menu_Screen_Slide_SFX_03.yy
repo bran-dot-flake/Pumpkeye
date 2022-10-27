@@ -18,6 +18,6 @@
   "duration": 0.191973,
   "parent": {
     "name": "Assets",
-    "path": "folders/Needs Work/Title/Assets.yy",
+    "path": "folders/a_Needs Work/Title/Assets.yy",
   },
 }

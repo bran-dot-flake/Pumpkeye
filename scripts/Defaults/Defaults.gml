@@ -63,11 +63,13 @@ global.sprites = {
 }
 
 
+// Save data
 global.defaults.save_file_name	= string(global.defaults.title) + "_preferences" + ".sav"
 global.save_data				= "";
 
 
+// Font
 var fnt_spr						= spr_fnt_placeholder;
-var fnt_map						= " ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.0123456789"
+var fnt_map						= " ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.0123456789-"
 global.defaults.font			= font_add_sprite_ext(fnt_spr, fnt_map, 1, 1);
 draw_set_font					(global.defaults.font);

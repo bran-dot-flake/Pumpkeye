@@ -18,6 +18,6 @@
   "duration": 70.45221,
   "parent": {
     "name": "Music",
-    "path": "folders/Good For Now/Music.yy",
+    "path": "folders/a_Good For Now/Music.yy",
   },
 }

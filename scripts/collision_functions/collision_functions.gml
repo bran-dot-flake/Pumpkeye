@@ -130,7 +130,6 @@ function move_with_tile_collisions(_frac = true)
 	
 			
 	#endregion		
-		
 	
 	
 	// Apply movement
@@ -152,4 +151,101 @@ function calculate_speed_fractions()
 	// Take away speed from speed
 	x_speed -= x_speed_frac;
 	y_speed -= y_speed_frac;
+	
+	
+	// Frac reset
+	//if x_speed == 0 x_speed_frac = 0;
+}
+
+
+
+
+
+function stop_with_object_collisions(_x_speed, _y_speed) {
+	var obj = par_solid;
+	
+	// Down
+	if(_y_speed > 0) { 
+		// Horizontal
+		if(place_meeting(x + _x_speed, y + _y_speed, obj)) {
+			while(place_meeting(x + _x_speed, y, obj) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+			while(place_meeting(x + _x_speed, y + _y_speed, obj) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+		}
+		
+	// Up
+	} else {
+		// Horizontal
+		if(place_meeting(x + _x_speed, y + _y_speed, obj)) {
+			while(place_meeting(x, y + _y_speed, obj) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+			while(place_meeting(x + _x_speed, y + _y_speed, obj) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+		}
+	}
+	
+	return [_x_speed, _y_speed];
+}
+
+
+
+
+
+
+
+
+///@func get_all_collisions(solid_object, x_speed, y_speed)
+///@desc Detects collision objects and determines possible movement speeds for the calling object using its collision mask (note: MUST be pixel perfect)
+///@arg collision_object
+///@arg x_speed
+///@arg y_speed
+function get_all_collisions(_solid, _x_speed, _y_speed) {
+	var tlay	= "ts_collisions";
+	var tsol	= tile.solid;
+	var tplat	= tile.platform;
+	var tlad	= tile.ladder;
+	
+	
+	#region Object testing
+	if(_y_speed > 0) { //Going down
+		//X movement preferred over Y (easier ledge landing)
+		if(place_meeting(x + _x_speed, y + _y_speed, _solid)) {
+			while(place_meeting(x + _x_speed, y, _solid) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+			while(place_meeting(x + _x_speed, y + _y_speed, _solid) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+			//The escape clause "(_x_speed != 0)" prevents infinite looping if you somehow clip into an object, but doesn't let you actually move, theoretically preventing clipping glitchs and preventing soft-locks (the player could still bring up a pause menu to restart for example)
+		}
+	} else { //Going up or staying flat
+		//Y movement preferred over X (less likely to get "stuck on a ceiling" when jumping near a cliff, and gives an extra frame of "coyote time" when going over cliffs)
+		if(place_meeting(x + _x_speed, y + _y_speed, _solid)) {
+			while(place_meeting(x, y + _y_speed, _solid) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+			while(place_meeting(x + _x_speed, y + _y_speed, _solid) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+		}
+	}
+	#endregion
+
+	#region Tile testing
+	if(_y_speed > 0) { //Going down
+	#region X Over Y
+	//Landing on a solid
+	if(tile_meeting(tlay, x + _x_speed, y + _y_speed, tsol)) {
+		while(tile_meeting(tlay, x + _x_speed, y, tsol) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+		while(tile_meeting(tlay, x + _x_speed, y + _y_speed, tsol) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+	}
+	//Landing on a platform
+	if(tile_meeting(tlay, x + _x_speed, y + _y_speed, tplat) && !tile_meeting(tlay, x, y, tplat)) {
+		while(tile_meeting(tlay, x + _x_speed, y + _y_speed, tplat) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+	}
+	//Landing on a ladder, basically platform again
+	if(tile_meeting(tlay, x + _x_speed, y + _y_speed, tlad) && !tile_meeting(tlay, x, y, tlad)) {
+		while(tile_meeting(tlay, x + _x_speed, y + _y_speed, tlad) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+	}
+	#endregion
+	} else { //Going up or standing still
+	#region Y Over X
+	if(tile_meeting(tlay, x + _x_speed, y + _y_speed, tsol)) {
+		while(tile_meeting(tlay, x, y + _y_speed, tsol) && (_y_speed != 0)) { _y_speed = approach(_y_speed, 0, 1); }
+		while(tile_meeting(tlay, x + _x_speed,y + _y_speed, tsol) && (_x_speed != 0)) { _x_speed = approach(_x_speed, 0, 1); }
+	}
+	#endregion
+	}
+	#endregion
+	
+	return [_x_speed,_y_speed];
 }

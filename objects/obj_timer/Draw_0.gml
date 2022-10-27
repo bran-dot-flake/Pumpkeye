@@ -2,10 +2,10 @@
 // Positioning temps
 var str		= ceil(global.time);
 var bord	= 6;
-target_width= string_width(str) + bord*2;
+width		= string_width(str) + bord*2;
 var box_h	= string_height(str) + bord*2;
 
-if frames == 1 width = target_width
+//if frames == 1 width = target_width
 
 
 // Draw the box

@@ -52,6 +52,6 @@
   },
   "parent": {
     "name": "Tile Sets",
-    "path": "folders/Needs Work/Nate/Tile Sets.yy",
+    "path": "folders/Nate/Tile Sets.yy",
   },
 }

@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "par_solid",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_solid",
+    "path": "sprites/spr_solid/spr_solid.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "m",
-    "path": "folders/Objects/Player/m.yy",
+    "name": "Collisions",
+    "path": "folders/Objects/Collisions.yy",
   },
 }

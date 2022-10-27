@@ -36,6 +36,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Transition",
-    "path": "folders/Good For Now/Transition.yy",
+    "path": "folders/a_Good For Now/Transition.yy",
   },
 }

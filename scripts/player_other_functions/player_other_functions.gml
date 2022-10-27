@@ -2,15 +2,12 @@ function player_other_functions()
 {
 
 
-
 // State change
 function change_state(_state)
 {
 	state			= _state;
-	sprite_index	= sprite[_state]
-	mask_index		= sprite[player_states.move]
-	image_index		= 0;
-	image_speed		= 1;
+	
+	change_sprite_state(_state, 1);
 	frames			= 0;
 		
 	x_speed_frac	= 0;
@@ -30,6 +27,26 @@ function change_sprite(_sprite)
 	// Reset index
 	sprite_index = _sprite;
 }
+
+
+
+// Sprite with state index change
+function change_sprite_state(_state, _reset_index = true)
+{
+	// Go to different sprite
+	if sprite_index != sprite[_state, player_sprites.body] {
+		// For indexing
+		sprite_index	= sprite[_state, player_sprites.body];
+		_sprite_index[player_sprite_index.hands]	= sprite[_state, player_sprites.hands];
+		_sprite_index[player_sprite_index.head]		= sprite[_state, player_sprites.head_normal];
+		_sprite_index[player_sprite_index.body]		= sprite[_state, player_sprites.body];
+	
+	
+		if _reset_index image_index		= 0;
+		image_speed		= 1;
+	}
+}
+
 
 
 // Ground check
@@ -53,14 +70,6 @@ function on_wall()
 	var t2 = tilemap_get_at_pixel(global.map, side + facing, bbox_top);
 		
 	return t1 != tile.none || t2 != tile.none;
-}
-
-
-function player_jump()
-{
-	change_state(player_states.jump);
-	y_speed = jump_speed;
-	jumps--;
 }
 
 }

@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Music",
-    "path": "folders/Good For Now/Music.yy",
+    "path": "folders/a_Good For Now/Music.yy",
   },
 }
